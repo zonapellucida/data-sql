@@ -1,0 +1,5 @@
+#this is run as the centos user on dev-address-etl
+#to edit command on dev-address-etl, run the command: sudo crontab -e
+
+#run every day at 11:30pm
+30 23 * * * /home/centos/CronScripts/./copyDailyGSCToDevStgPrd.sh
